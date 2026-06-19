@@ -6,7 +6,7 @@ Discount by category is use the original price of each product to calculate.
 
 Run
 ```bash 
-git clone https://github.com/kamphaengphet/262581_kamphaengphet_singkhon.git
+git clone https://github.com/Andrew7y/262581_kamphaengphet_singkhon.git
 
 cd 262581_kamphaengphet_singkhon
 
