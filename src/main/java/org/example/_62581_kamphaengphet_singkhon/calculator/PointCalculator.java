@@ -6,6 +6,7 @@ import org.example._62581_kamphaengphet_singkhon.model.Promotion;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 @Component
 @NoArgsConstructor
@@ -16,7 +17,8 @@ public class PointCalculator implements PromotionCalculator{
             Promotion promotion
     ){
         BigDecimal maxDiscount = chart.getCurrentTotalPrice()
-                .multiply(BigDecimal.valueOf(0.20));
+                .multiply(BigDecimal.valueOf(0.20))
+                .setScale(2, RoundingMode.DOWN);
 
         BigDecimal pointDiscount = BigDecimal.valueOf(chart.getCustomerPoint());
 
