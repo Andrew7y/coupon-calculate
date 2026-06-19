@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: 262581_kamphaengphet_singkhon
+
+    ports:
+      - "8080:8080"
+
+    restart: unless-stopped
